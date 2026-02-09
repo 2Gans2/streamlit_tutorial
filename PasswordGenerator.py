@@ -1,3 +1,4 @@
+#Password Generator
 import streamlit as st
 from string import ascii_letters, digits, punctuation
 import random
@@ -12,3 +13,4 @@ if st.button("Создать"):
         characters += punctuation
     password = "".join(random.choices(characters, k=length))
     st.code(password, language="text")
+
